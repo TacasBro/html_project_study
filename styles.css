@@ -1,0 +1,369 @@
+* {
+    /* Universal reset: */
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+article,
+section,
+hgroup,
+nav,
+figure {
+    /* Giving a display value to the HTML5 rendered elements: */
+    display: block;
+}
+
+body {
+    /* Setting the default text color, size, page background and a font stack: */
+    font-size: 0.825em;
+    color: #fcfcfc;
+    background-color: #320066;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Hyperlink Styles: */
+
+a,
+a:visited {
+    color: #0196e3;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a img {
+    border: none;
+}
+
+
+/* Headings: */
+
+h1,
+h2,
+h3 {
+    font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    text-shadow: 0 1px 1px black;
+}
+
+h1 {
+    /* The logo text */
+    font-size: 3.5em;
+    padding: 0.5em 0 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    /* The slogan text */
+    font-family: forte, "Myriad Pro", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0 0 1em;
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.5em;
+    padding-bottom: 1em;
+}
+
+.line {
+    /* The dividing line: */
+    height: 1px;
+    background-color: #5008AB;
+    border-bottom: 1px solid #5008AB;
+    margin: 1em 0;
+    overflow: hidden;
+}
+
+article .line {
+    /* The dividing line inside of the article is darker: */
+    background-color: #5008AB;
+    border-bottom-color: #5008AB;
+    margin: 1.3em 0;
+}
+
+footer .line {
+    margin: 2em 0;
+}
+
+nav {
+    background: #320066;
+    padding: 0 5px;
+    position: inherit;
+    right: 0;
+    top: 4em;
+    border: 1px solid #5008AB;
+}
+
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/* The navigation styling: */
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a,
+nav ul li a:visited {
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 5px 2px;
+    padding: 7px 10px 4px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: #5008AB;
+}
+
+nav,
+article,
+nav ul li a,
+figure {
+    /* Applying CSS3 rounded corners: */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+/* Article styles: */
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+article {
+    background-color: #1B023A;
+    margin: 3em 0;
+    padding: 20px;
+    min-height: 700px;
+    box-shadow: 0 0 5px #000;
+    height: auto;
+    text-shadow: 0 2px 0 black;
+}
+
+#articles_short {
+    background-color: #1B023A;
+    margin: 3em 0;
+    padding: 20px;
+    height: 450px;
+    text-shadow: 0 2px 0 black;
+}
+
+figure {
+    border: 3px solid #142830;
+    float: right;
+    height: 300px;
+    margin-left: 15px;
+    overflow: hidden;
+    width: 500px;
+}
+
+figure:hover {
+    -moz-box-shadow: 0 0 2px #4D7788;
+    -webkit-box-shadow: 0 0 2px #4D7788;
+    box-shadow: 0 0 2px #4D7788;
+}
+
+figure img {
+    margin-left: -60px;
+}
+
+
+/* Footer styling: */
+
+footer {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 0.825em;
+}
+
+footer p {
+    margin-bottom: -2.5em;
+    position: relative;
+}
+
+footer a,
+footer a:visited {
+    color: #cccccc;
+    background-color: #213e4a;
+    display: block;
+    padding: 2px 4px;
+    z-index: 100;
+    position: relative;
+}
+
+footer a:hover {
+    text-decoration: none;
+    background-color: #142830;
+}
+
+footer a.by {
+    float: left;
+}
+
+footer a.up {
+    float: right;
+}
+
+@media handheld and (min-width:480px) {
+    #getFixed {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 960px;
+        z-index: 100;
+    }
+}
+
+
+/* form style */
+
+.form-style {
+    max-width: 450px;
+    padding: 40px 30px 40px 40px;
+    font: 13px Arial, Helvetica, sans-serif;
+    margin: 50px auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-style-heading {
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.form-style label {
+    display: block;
+    margin: 0px 0px 15px 0px;
+}
+
+.form-style label>span {
+    width: 100px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+.form-style span.required {
+    color: red;
+}
+
+.form-style .long {
+    width: 120px;
+}
+
+.form-style input.input-field {
+    width: 48%;
+}
+
+.form-style input.input-field,
+.form-style .textarea-field,
+.form-style .select-field {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+
+.form-style .input-field:focus,
+.form-style .textarea-field:focus,
+.form-style .select-field:focus {
+    border: 1px solid #0C0;
+}
+
+.form-style .textarea-field {
+    height: 100px;
+    width: 55%;
+}
+
+.form-style input[type="button"],
+.form-style input[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #07000F;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #07000F;
+    box-shadow: inset 0px 1px 0px 0px #07000F;
+    background-color: #5008AB;
+    border: 1px solid #07000F;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 8px 18px;
+    text-decoration: none;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+
+.form-style input[type="button"]:hover,
+.form-style input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+    background-color: #5008AB;
+}
+
+.form-style .success {
+    background: #D8FFC0;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 5px 0px;
+    border: none;
+    color: #2E6800;
+    text-shadow: none;
+}
+
+.form-style .error {
+    background: #FFE8E8;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 5px 0px;
+    border: none;
+    font-weight: bold;
+    color: #FF0000;
+    border-left: 3px solid #FF0000;
+    text-shadow: none;
+}
